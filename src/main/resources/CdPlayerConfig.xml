@@ -13,15 +13,21 @@
 <!--    <bean id="pn" class="dome5.Pnxl"/>-->
 <!--    <bean id="cdPlayer" class="dome5.CdPlayer" c:cd-ref="pn"/>-->
     <!--值注入-->
-        <bean id="pn6" class="dome6.Pnxl">
-            <constructor-arg value="盘尼"/>
-            <constructor-arg value="西林"/>
-        </bean>
+<!--        <bean id="pn6" class="dome6.Pnxl">-->
+<!--            <constructor-arg value="盘尼"/>-->
+<!--            <constructor-arg value="西林"/>-->
+<!--            &lt;!&ndash; 属性注入 &ndash;&gt;-->
+<!--            &lt;!&ndash;list注入&ndash;&gt;-->
+<!--            <property name="names">-->
+<!--                <list>-->
+<!--                    <value>问</value>-->
+<!--                    <value>有何不可</value>-->
+<!--                    <value>gad the girl</value>-->
+<!--                </list>-->
+<!--            </property>-->
+<!--        </bean>-->
         <bean id="cdPlayer6" class="dome6.CdPlayer">
             <constructor-arg ref="pn6"/>
         </bean>
-        <!--list注入-->
-    <!-- 属性注入 -->
-
     <!-- 注意 C命名空间和P命名空间无法注入集合-->
 </beans>

@@ -1,6 +1,7 @@
 package dome6;
 
 import dome5.CdPlayer;
+import dome5.CompactDisc;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -42,5 +43,12 @@ public class CdPlayerXmlTest {
         Assert.assertNotNull(player6);
         player6.run();
         Assert.assertEquals(log.getLog(),"盘尼西林开始摇滚了！\n");
+    }
+
+    @Test
+    public void test3(){
+        Pnxl cd = (Pnxl) player6.getCd();
+        Assert.assertNotNull(cd);
+        cd.showMenu();
     }
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--构造器注入bean-->
+    <bean id="pn6" class="dome6.Pnxl">
+            <constructor-arg value="盘尼"/>
+            <constructor-arg value="西林"/>
+            <!-- 属性注入 -->
+            <!--list注入-->
+            <property name="names">
+                <list>
+                    <value>问</value>
+                    <value>有何不可</value>
+                    <value>gad the girl</value>
+                </list>
+            </property>
+    </bean>
+</beans>

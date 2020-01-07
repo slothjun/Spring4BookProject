@@ -20,4 +20,12 @@ public class CdPlayer {
     public void run(){
         cd.player();
     }
+
+    public CompactDisc getCd() {
+        return cd;
+    }
+
+    public void setCd(CompactDisc cd) {
+        this.cd = cd;
+    }
 }

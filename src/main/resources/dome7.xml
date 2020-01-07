@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--xml导入xml-->
+<!--    <import resource="PnxlConfig.xml"/>-->
+<!--    <import resource="CdPlayerConfig.xml"/>-->
+    <!--xml导入注解-->
+<!--    <import resource="PnxlConfig.xml"/>
+    <bean class="dome7.CdPlayerConfig"/>-->
+    <!--xml导入注解导入xml-->
+    <bean class="dome7.CdPlayerConfig"/>
+</beans>
