@@ -22,8 +22,8 @@ import javax.annotation.Resource;
 public class DessertTest {
 
     @Autowired
-    @Qualifier("cake")//限定符解决方案
-//    @Cold //自定义限定符注解
+//    @Qualifier("cake")//限定符解决方案
+    @Cold //自定义限定符注解
     private Dessert dessert;
 
     @Test
