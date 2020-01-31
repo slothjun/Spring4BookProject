@@ -14,5 +14,6 @@ public class Circus implements Performance {
 
     public void perform() {
         System.out.println("开始表演马戏");
+//        System.out.print(1/0);
     }
 }
